@@ -37,6 +37,8 @@ dependencies:
   http: ^0.13.4
   dio: ^4.0.4
   mocktail: ^0.2.0
+  bloc: ^8.0.2
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +67,8 @@ flutter:
     - assets/icons/calendario.png
     - assets/icons/temperatura.png
     - assets/icons/wind.png
+    
+    - assets/image/fundo.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

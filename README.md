@@ -1,6 +1,6 @@
 # climax
 
-A new Flutter project.
+Aplicativo em Flutter, que cons
 
 ## Getting Started
 
