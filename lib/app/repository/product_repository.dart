@@ -1,4 +1,4 @@
-import 'package:climax/app/model/todo_model.dart';
+import 'package:climax/app/model/weather_model.dart';
 import 'package:climax/app/services/http_client._contrato.dart';
 
 // cuidar com os new

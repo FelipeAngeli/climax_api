@@ -1,6 +1,6 @@
 //service
 
-import 'package:climax/app/model/todo_model.dart';
+import 'package:climax/app/model/weather_model.dart';
 
 import 'http_client._contrato.dart';
 
