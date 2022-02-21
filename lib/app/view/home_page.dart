@@ -4,10 +4,8 @@ import 'package:climax/app/bloc/product_state.dart';
 import 'package:climax/app/controller/home_controller.dart';
 import 'package:climax/app/repository/product_repository.dart';
 import 'package:climax/app/services/dio_client.dart';
-import 'package:climax/app/services/json_placeholder_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:http/http.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -92,8 +90,12 @@ class _HomePageState extends State<HomePage> {
                     bloc: bloc,
                     builder: (context, state) {
                       if (state is LoadingProductState) {
-                        return Center(
-                          child: CircularProgressIndicator(), //posso editar
+                        return const Center(
+                          child: CircularProgressIndicator(
+                            backgroundColor: Color(0xffFE7062),
+                            color: Color(0xff595FFB),
+                            strokeWidth: 5,
+                          ), //posso editar
                         );
                       }
                       if (state is ErrorProductState) {
@@ -102,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                         );
                       }
                       if (state is EmptyProductState) {
-                        return Center(
+                        return const Center(
                           child: Text("Nem um clima encontrado"),
                         );
                       }
